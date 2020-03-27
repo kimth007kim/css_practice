@@ -1,0 +1,46 @@
+CSS의 선택자
+
+전체선택자 :적용할대상으로 HTML 문서 내부의 모든 요소를 선택합니다.
+<style>*{color:red}</style>
+
+HTML 요소 선택자: CSS를 적용할 대상으로 HTML 요소(h2)의 이름을 직접 사용하여 선택할 수 있습니다.
+<style>h2{color:teal; text-decoration:underline;}</style>
+
+id 선택자: CSS를 적용할 대상으로 특정요소를 선택할때 사용. 웹페이지에 포함된 여러요소중 특정아이디 이름가지는 요소만 선택
+<style>#heading{color:sandybrown;text-decoration:line-through;}</style>
+<h2 id="heading>이 부분에 스타일을 적용합니다.</h2>
+
+class 선택자: 특정 집단의 여러요소를 한번에 선택할 때 사용합니다. 특정집단을 클래스라고 하며, 같은 클래스 이름을 가지는 요소를 모두 선택
+<style>.headings{ color: deepskyblue; text-decoration: overline;}</style>
+<h2 class="headings">이 부분에 스타일을 적용합니다.</h2>
+<p>클래스 선택자를 이용하여 스타일을 적용할 HTML 요소들을 한 번에 선택할 수 있습니다.</p>
+<h3 class="headings">이 부분에도 같은 스타일을 적용합니다.</h3>
+
+그룹 선택자: 위에서 언급한 여러선택자를 같이 사용하고자 할때 사용함 코드를 중복작성없도록 하기위해 씀
+<style>
+    h2 { color: navy; }
+    h2, h3 { text-align: center; }
+    h2, h3, p { background-color: lightgray; }
+</style>
+
+
+결합선택자
+CSS 선택자는 하나 이상의 선택자를 포함할 수 있습니다. 
+결합선택자는 연관된 선택자들 간의 관계를 설정해줍니다.
+
+자손 선택자: 해당 요소의 하위요소중에서 특정 타입의 요소를 모두 선택합니다.
+div p{스타일;}
+<style> div p {background-color:#FFEFD5;}</style>
+
+자식 선택자:자식 선택자는 해당요소의 바로 밑에 존재하는 하위 요소 중에서 특정 타입의 요소를 모두 선택합니다.
+<style>div > p { background-color: #FFEFD5; }</style>
+
+동위 선택자
+동위 관계에 있는 요소 중에서 해당 요소보다 뒤에 존재하는 특정 타입의 요소를 모두 선택합니다.
+동위 관계란 HTML 요소의 계층 구조에서 같은 부모요소를 가지고 있는 요소들을 의미합니다.
+이러한 동위관계에 있는 요소들을 형제 요소라고합니다.
+
+일반 동위 선택자:(그냥 뒤에있으면 전부다 적용) 해당요소와 동위관계에 있으며, 해당 요소보다 뒤에 존재하는 특정타입의 요소를 모두 선택합니다.
+<style>div ~ p { background-color: #FFE4E1; }</style>
+
+인접 동위 선택자:(뒤에 오는거 하나만 적용) 가까운이라는 의미가 있다. 해당요소와 동위관계에 있으며 해당요소 바로뒤에 존재하는 특정타입의 요소를 모두 선택함
