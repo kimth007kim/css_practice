@@ -1,0 +1,100 @@
+/* 헤더파츠 */
+
+.header {
+  /* float: left; */
+  background-color: black;
+  color: #ffffff;
+  height: 60px;
+}
+
+#main_icon {
+  float: left;
+  color: red;
+  font-size: 25px;
+  top: 50%;
+}
+#name {
+  /* display: inline-block; */
+  float: left;
+  font-size: 25px;
+}
+#sb {
+  float: right;
+}
+#mb {
+  float: right;
+}
+
+/* 헤더파츠 끝*/
+
+/* 비디오 파츠 */
+
+.video {
+  display: block;
+  text-align: center;
+  background-color: black;
+}
+#space {
+  margin-top: -30px;
+}
+
+/* 비디오 파츠 끝*/
+
+/* 인트로 파츠 */
+
+#intro {
+  height: 100px;
+}
+#blueletter {
+  color: blue;
+  font-size: 12px;
+}
+#blackletter {
+  font-size: 12px;
+}
+
+/* 인트로 파츠 끝*/
+
+/*아이콘 파츠*/
+.icon {
+  color: grey;
+  text-align: center;
+}
+.icon_item {
+  color: grey;
+  /* float: left; */
+  display: inline-block;
+  width: 70px;
+}
+
+.icon p {
+  font-size: 9px;
+  margin-top: -3px;
+}
+.icon button {
+  border: none;
+  background: none;
+}
+
+/* .icon_item.thumbup {
+}
+.icon_item.thumbdown {
+}
+.icon_item.share {
+}
+.icon_item.plus {
+}
+.icon_item.flag {
+} */
+
+/*아이콘 파츠*/
+#foot {
+  height: 100px;
+}
+#comment {
+  height: 100px;
+}
+
+div {
+  border: 1px solid pink;
+}
