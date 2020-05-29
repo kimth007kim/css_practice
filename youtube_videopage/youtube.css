@@ -11,7 +11,7 @@
   float: left;
   color: red;
   font-size: 25px;
-  top: 50%;
+  padding-top: 20px;
 }
 #name {
   /* display: inline-block; */
@@ -20,9 +20,15 @@
 }
 #sb {
   float: right;
+  font-size: 20px;
+  padding-top: 22.5px;
 }
 #mb {
   float: right;
+  font-size: 20px;
+  padding-top: 22.5px;
+  margin-left: 20px;
+  margin-right: 15px;
 }
 
 /* 헤더파츠 끝*/
@@ -31,26 +37,33 @@
 
 .video {
   display: block;
-  text-align: center;
+  /* text-align: center; */
   background-color: black;
 }
-#space {
-  margin-top: -30px;
+#pic {
+  /* text-align: center; */
 }
 
 /* 비디오 파츠 끝*/
 
 /* 인트로 파츠 */
 
-#intro {
-  height: 100px;
+.intro {
+  height: 100%;
 }
 #blueletter {
+  padding-top: 10px;
   color: blue;
   font-size: 12px;
+  height: 5px;
 }
+/* #space {
+                    margin-top: -30px;
+                  } */
 #blackletter {
   font-size: 12px;
+}
+#tag {
 }
 
 /* 인트로 파츠 끝*/
@@ -88,11 +101,15 @@
 } */
 
 /*아이콘 파츠*/
-#foot {
-  height: 100px;
+
+/* 작성자 파츠 */
+.author {
+  height: 50px;
 }
-#comment {
-  height: 100px;
+
+/* 작성자 파츠 */
+.list {
+  height: 50px;
 }
 
 div {
