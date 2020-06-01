@@ -78,7 +78,7 @@ header .icons .fa-search {
   max-width: 1000px;
 }
 
-.info {
+body > .info {
   padding: var(--padding);
 }
 
@@ -99,15 +99,20 @@ header .icons .fa-search {
 }
 .info .metadata .titleAndButton .title {
   font-size: var(--font-medium);
+  margin-right: var(--padding);
+}
+.info .metadata .titleAndButton .title.clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  margin-right: var(--padding);
 }
 
 .info .metadata .titleAndButton .moreBtn {
   height: 100%;
+}
+.info .metadata .titleAndButton .moreBtn.clicked {
+  transform: rotate(180deg);
 }
 
 .info .metadata .views {
@@ -188,12 +193,12 @@ header .icons .fa-search {
 
 .upNext .item {
   display: flex;
+  margin-top: var(--padding);
 }
 
 .upNext .item .img {
   flex: 1 1 35%;
-  width: 480px;
-  height: 270px;
+  margin-right: var(--padding);
 }
 .upNext .item .img img {
   width: 100%;
@@ -205,4 +210,29 @@ header .icons .fa-search {
 
 .upNext .item .moreBtn {
   flex: 1 1 5%;
+}
+
+.upNext .item .info {
+  display: flex;
+  flex-direction: column;
+}
+.upNext .item .info .title {
+  font-size: var(--font-small);
+}
+
+.upNext .item .info .name .upNext .item .info .views {
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+}
+
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpNext {
+    flex-direction: row;
+    margin: var(--padding) 0;
+  }
 }
